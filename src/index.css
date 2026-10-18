@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@layer base {
+  :root {
+    --notion-bg: #ffffff;
+    --notion-sidebar-bg: #f7f7f5;
+    --notion-text: #37352f;
+    --notion-text-muted: #787774;
+    --notion-border: rgba(55, 53, 47, 0.09);
+    --notion-hover: rgba(55, 53, 47, 0.06);
+    --notion-active: rgba(55, 53, 47, 0.12);
+    --notion-card: #ffffff;
+    --notion-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+    --notion-modal-bg: #ffffff;
+  }
+
+  .dark {
+    --notion-bg: #191919;
+    --notion-sidebar-bg: #202020;
+    --notion-text: #ebebeb;
+    --notion-text-muted: #9b9b9b;
+    --notion-border: rgba(255, 255, 255, 0.09);
+    --notion-hover: rgba(255, 255, 255, 0.06);
+    --notion-active: rgba(255, 255, 255, 0.12);
+    --notion-card: #252525;
+    --notion-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+    --notion-modal-bg: #252525;
+  }
+
+  body {
+    background-color: var(--notion-bg);
+    color: var(--notion-text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* Custom Notion Scrollbars */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(55, 53, 47, 0.2);
+    border-radius: 4px;
+  }
+  .dark ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(55, 53, 47, 0.35);
+  }
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.35);
+  }
+}
+
+/* Notion Callout Tints */
+.callout-gray { background-color: rgba(241, 241, 239, 0.8); }
+.callout-brown { background-color: rgba(244, 238, 238, 0.8); }
+.callout-orange { background-color: rgba(251, 236, 221, 0.8); }
+.callout-yellow { background-color: rgba(251, 243, 219, 0.8); }
+.callout-green { background-color: rgba(237, 243, 236, 0.8); }
+.callout-blue { background-color: rgba(231, 243, 248, 0.8); }
+.callout-purple { background-color: rgba(244, 240, 247, 0.8); }
+.callout-pink { background-color: rgba(249, 238, 243, 0.8); }
+.callout-red { background-color: rgba(253, 235, 236, 0.8); }
+
+.dark .callout-gray { background-color: rgba(45, 45, 45, 0.8); }
+.dark .callout-brown { background-color: rgba(67, 45, 40, 0.6); }
+.dark .callout-orange { background-color: rgba(89, 56, 30, 0.6); }
+.dark .callout-yellow { background-color: rgba(86, 75, 34, 0.6); }
+.dark .callout-green { background-color: rgba(36, 61, 46, 0.6); }
+.dark .callout-blue { background-color: rgba(30, 56, 74, 0.6); }
+.dark .callout-purple { background-color: rgba(59, 42, 75, 0.6); }
+.dark .callout-pink { background-color: rgba(78, 38, 59, 0.6); }
+.dark .callout-red { background-color: rgba(82, 38, 38, 0.6); }
+
+/* Selection */
+::selection {
+  background: rgba(46, 170, 220, 0.28);
+}
