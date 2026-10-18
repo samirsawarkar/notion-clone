@@ -8,7 +8,7 @@
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4.0-38bdf8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Notion Clone Preview](https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=1600&auto=format&fit=crop&q=80)
+![Notion Clone Preview](docs/screenshots/ramp-hq-kanban.png)
 
 ---
 
@@ -63,9 +63,13 @@
 - **User Management Modal**: Invite teammates, set roles (*Workspace Owner*, *Admin*, *Member*, *Guest*), and switch active profiles on the fly.
 - **Assignee Avatars**: Assign team members to database tasks with interactive color avatars.
 
+![Workspace Members Modal](docs/screenshots/workspace-members-modal.png)
+
 ### 6. 📁 Templates & Real Notion Importer
 - **Notion Template Gallery**: Browse and duplicate built-in templates (*Sales CRM*, *Habit Tracker*, *Reading List*, *Cornell Notes*).
 - **Markdown Importer**: Import `.md` and `.txt` files exported from official Notion into native editable blocks.
+
+![Habit Tracker & Daily Journal](docs/screenshots/habit-tracker-journal.png)
 
 ### 7. 🎨 Navigation, Themes & Customization
 - **Collapsible Sidebar**: Tree view of workspace pages with recursive subpage nesting, quick links (*Search or ask Ctrl+K*, *Home*, *Templates*, *Import*), Favorites, Recents, and Trash Bin.
